@@ -1,0 +1,22 @@
+/*const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");*/
+
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+
+function handleLoginClick()
+{
+    const lgval = loginInput.value;
+
+    if(lgval === "")
+        alert("Enter something bitch");
+    else if(lgval.length > 15)
+        alert("Username is too long bitch");
+    else
+        alert("Welcome back " + lgval);
+}
+loginButton.addEventListener("click", handleLoginClick);
+
+-------------------- ------------------
